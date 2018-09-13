@@ -6,9 +6,9 @@ type Power struct {
 }
 
 type Location struct {
-	x float64
-	y float64
-	z float64
+	X float64
+	Y float64
+	Z float64
 }
 
 type NonPlayerCharacter struct {
