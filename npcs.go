@@ -6,7 +6,7 @@ import (
 )
 
 func (location Location) String() string  {
-	return fmt.Sprintf("(%f,%f,%f)",location.x, location.y, location.z)
+	return fmt.Sprintf("(%f,%f,%f)",location.X, location.Y, location.Z)
 }
 
 /*
@@ -14,7 +14,7 @@ func (location Location) String() string  {
  */
 func (loc Location) EulideanDistance(target Location) float64  {
 
-	return math.Sqrt((loc.x-target.x)*(loc.x-target.x)+(loc.y-target.y)*(loc.y-target.y)+(loc.z-target.z)*(loc.z-target.z))
+	return math.Sqrt((loc.X-target.X)*(loc.X-target.X)+(loc.Y-target.Y)*(loc.Y-target.Y)+(loc.Z-target.Z)*(loc.Z-target.Z))
 }
 
 func (npc NonPlayerCharacter) DistanceTo(character NonPlayerCharacter) float64 {
